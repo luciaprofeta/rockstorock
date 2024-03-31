@@ -115,7 +115,7 @@ nav ul li a.active {
     width: 100%; /* Ensures the div takes the full width of its parent */
 }
 
-.hero-content h1, .hero-content h2 {
+#hero-content h1, #hero-content h2 {
     display: block; /* Stack the h1 and h2 */
     color: #050403;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* Text shadow for readability */
