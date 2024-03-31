@@ -32,10 +32,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px; /* Restrict the header height to be more compact */
 }
 
 .logo img {
-    height: 50px;
+    height: 60px; /* Slightly larger logo for visibility */
 }
 
 /* Navigation */
@@ -53,21 +54,24 @@ nav ul {
 nav ul li a {
     color: #050403;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1rem; /* Smaller font size for a more balanced header */
     font-family: 'Montserrat', sans-serif;
-    padding: 5px 10px;
-    transition: color 0.3s ease;
+    padding: 10px 15px; /* Reduced padding for compact navigation buttons */
+    background-color: #a56942; /* Add a background color for clear button-like appearance */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #a56942;
+    background-color: #8b5c33; /* Darken the background on hover for interactivity */
+    color: #f3eec5;
 }
 
 /* Hero Section */
 .hero {
     background: url('images/landscapes/Needles.jpg') center no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 50vh; /* Reduced height to give more space to other content */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,39 +82,46 @@ nav ul li a:hover {
 .hero-content {
     text-align: center;
     color: #050403;
+    background-color: rgba(243, 238, 197, 0.7); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners for the content background */
     max-width: 90%;
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Increased font size for impact */
+    color: #050403;
+    margin-bottom: 0.5rem;
 }
 
 .hero-content h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Adjusted font size for better readability */
+    color: #050403;
+    margin-bottom: 0.5rem;
 }
 
 /* Responsiveness */
 @media screen and (max-width: 768px) {
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content h2 {
-        font-size: 1rem;
-    }
-
     nav ul {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     nav ul li {
         margin: 5px 0;
     }
 
-    .logo, nav {
-        float: none;
-        text-align: center;
+    nav ul li a {
+        padding: 8px 12px; /* Smaller padding on mobile */
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.2rem;
     }
 }
 
@@ -141,9 +152,3 @@ footer {
         margin: 10px 0;
     }
 }
-
-.button:hover {
-    background-color: #71442a; /* Darken button background color on hover */
-}
-
-/* Additional styling can be added as needed */
