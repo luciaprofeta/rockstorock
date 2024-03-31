@@ -13,7 +13,7 @@ body {
     position: relative; /* Set position to relative */
     text-align: center; /* Center-align hero content */
     background-image: url('images/landscapes/Needles.jpg'); /* Set background image */
-    background-size: 100% 100%; /* Stretch the image to cover the entire hero section */
+    background-size: auto; /* Set background size to auto */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-position: center; /* Center the background image */
     width: 100%; /* Set width to 100% of the viewport width */
