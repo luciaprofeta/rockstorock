@@ -3,6 +3,9 @@ body {
     font-family: 'Montserrat', sans-serif; /* Use Montserrat as primary font */
     color: #050403; /* Set primary text color */
     background-color: #cfb699; /* Set background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow: hidden; /* Hide both horizontal and vertical overflow */
 }
 
 /* Hero section styling */
