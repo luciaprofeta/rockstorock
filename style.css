@@ -1,52 +1,18 @@
-/* Body and text styling */
+/* CSS for body and text */
 body {
-    font-family: 'Nunito', sans-serif; /* Set primary font */
+    font-family: 'Nunito', sans-serif; /* Use Nunito as primary font */
     color: #1a1a1a; /* Set primary text color */
     background-color: #ffffff; /* Set background color */
-}
-
-/* Header styling */
-header {
-    text-align: center; /* Center-align header content */
-    padding: 20px 0; /* Add padding to top and bottom of header */
-}
-
-h1, h2 {
-    font-family: 'Nunito', sans-serif; /* Set primary font for headings */
-    font-weight: 700; /* Set font weight to bold */
-}
-
-h1 {
-    font-size: 2.5rem; /* Set font size for h1 */
-    margin-bottom: 10px; /* Add margin at the bottom of h1 */
-}
-
-h2 {
-    font-size: 1.5rem; /* Set font size for h2 */
-    color: #888; /* Set secondary text color for h2 */
-}
-
-/* Navigation styling */
-nav {
-    background-color: #1a1a1a; /* Set background color for navigation */
-    color: #ffffff; /* Set text color for navigation */
-}
-
-nav a {
-    color: #ffffff; /* Set text color for navigation links */
-    text-decoration: none; /* Remove underline from links */
-    padding: 10px 20px; /* Add padding to links */
-    transition: color 0.3s ease; /* Add transition effect for color change */
-}
-
-nav a:hover {
-    color: #ff6f61; /* Change text color on hover */
 }
 
 /* Hero section styling */
 .hero {
     position: relative; /* Set position to relative */
     text-align: center; /* Center-align hero content */
+    background-image: url('images/your-hero-image.jpg'); /* Set background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    height: 500px; /* Set a fixed height for the hero section */
 }
 
 .hero-content {
@@ -59,24 +25,21 @@ nav a:hover {
 
 .hero-content h1 {
     font-family: 'Nunito', sans-serif; /* Use Nunito for headings */
-    font-weight: 700; /* Set font weight to bold */
-    font-size: 3rem; /* Increase font size for h1 */
+    font-weight: 900; /* Set font weight to extra bold */
+    font-size: 4rem; /* Increase font size for h1 */
     margin-bottom: 10px; /* Add margin at the bottom of h1 */
     color: #ffffff; /* Set text color for hero title */
 }
 
 .hero-content h2 {
     font-family: 'Nunito', sans-serif; /* Use Nunito for headings */
-    font-size: 1.5rem; /* Set font size for h2 */
+    font-size: 1rem; /* Set smaller font size for h2 */
     color: #ffffff; /* Set text color for hero subtitle */
 }
 
 .hero img {
-    max-width: 100%; /* Ensure image does not exceed container width */
-    height: auto; /* Maintain aspect ratio */
     display: block; /* Ensure image behaves as a block element */
 }
-
 
 /* Main content section */
 main {
