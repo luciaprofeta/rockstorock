@@ -1,8 +1,8 @@
 /* CSS for body and text */
 body {
-    font-family: 'Nunito', sans-serif; /* Use Nunito as primary font */
-    color: #1a1a1a; /* Set primary text color */
-    background-color: #ffffff; /* Set background color */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat as primary font */
+    color: #050403; /* Set primary text color */
+    background-color: #cfb699; /* Set background color */
 }
 
 /* Hero section styling */
@@ -17,24 +17,27 @@ body {
 
 .hero-content {
     position: absolute; /* Position hero content absolutely */
-    top: 50%; /* Align content vertically */
+    top: 20%; /* Align content vertically at 20% */
     left: 50%; /* Align content horizontally */
     transform: translate(-50%, -50%); /* Center content */
     z-index: 1; /* Set z-index to ensure content appears above image */
 }
 
 .hero-content h1 {
-    font-family: 'Nunito', sans-serif; /* Use Nunito for headings */
-    font-weight: 900; /* Set font weight to extra bold */
+    font-family: 'Spectral', serif; /* Use Spectral for headings */
+    font-weight: 700; /* Set font weight to bold */
     font-size: 4rem; /* Increase font size for h1 */
     margin-bottom: 10px; /* Add margin at the bottom of h1 */
-    color: #ffffff; /* Set text color for hero title */
+    color: #e54c47; /* Set text color for hero title */
 }
 
 .hero-content h2 {
-    font-family: 'Nunito', sans-serif; /* Use Nunito for headings */
-    font-size: 1rem; /* Set smaller font size for h2 */
-    color: #ffffff; /* Set text color for hero subtitle */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headings */
+    font-size: 1.5rem; /* Set font size for h2 */
+    color: #a56942; /* Set text color for hero subtitle */
+    white-space: nowrap; /* Ensure subtitle takes up only one line */
+    overflow: hidden; /* Hide any overflow text */
+    text-overflow: ellipsis; /* Display ellipsis (...) if text overflows */
 }
 
 .hero img {
@@ -49,6 +52,36 @@ main {
 /* Footer styling */
 footer {
     /* Add any additional styling for footer */
+}
+
+/* Navigation styling */
+nav {
+    background-color: rgba(26, 26, 26, 0.8); /* Set semi-transparent dark gray background for navigation */
+}
+
+nav a {
+    color: #ffffff; /* Set white color for navigation text */
+    text-decoration: none; /* Remove underline from navigation links */
+    padding: 10px 20px; /* Add padding to navigation links */
+    transition: all 0.3s ease; /* Add transition effect to navigation links */
+}
+
+nav a:hover {
+    color: #9ec3f5; /* Change navigation text color on hover */
+}
+
+/* Button styling */
+.button {
+    background-color: #e54c47; /* Set button background color */
+    color: #ffffff; /* Set white color for button text */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Add padding to button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: all 0.3s ease; /* Add transition effect to button */
+}
+
+.button:hover {
+    background-color: #71442a; /* Darken button background color on hover */
 }
 
 /* Additional styling can be added as needed */
