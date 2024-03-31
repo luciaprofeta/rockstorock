@@ -33,43 +33,53 @@ img {
 header {
     background-color: transparent; /* Transparent background initially */
     color: #050403;
-    padding: 20px 0;
+    padding: 10px 0;
     position: fixed; /* Fixed position for a sticky header */
     width: 100%;
     top: 0;
     left: 0;
     z-index: 999;
-    transition: background-color 0.3s; /* Transition for the background color */
+    transition: padding 0.3s; /* Transition for the padding */
 }
 
 header.scrolled {
-    background-color: #f3eec5; /* Solid color after scrolling */
-}
-
-.logo {
-    text-align: center;
-}
-
-.logo img {
-    height: 60px; /* Adjust the size of your logo */
-    display: block;
-    margin: 0 auto;
+    padding: 5px 0; /* Reduce padding on scroll for a tighter header */
 }
 
 /* Navigation Bar */
 .nav-bar {
     display: flex;
-    justify-content: space-between; /* Space between logo and navigation */
+    justify-content: space-between;
     align-items: center;
-    max-width: 1200px; /* Same as container width */
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px; /* Padding for some space on the sides */
+    padding: 0 20px;
+    transition: background-color 0.3s; /* Transition for the background color */
+}
+
+.nav-bar.scrolled {
+    background-color: rgba(243, 238, 197, 0.8); /* Half-opaque background after scrolling */
+}
+
+.logo {
+    flex: 0 0 50px; /* Flex sizing, with a basis of 50px */
+}
+
+.logo img {
+    height: 40px; /* Adjust the size of your logo */
+}
+
+/* Navigation Items */
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     padding: 0;
+    margin: 0; /* Remove margin to align with the logo */
 }
 
 nav ul li {
@@ -81,7 +91,6 @@ nav ul li a {
     text-decoration: none;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
-    padding: 8px 16px;
     transition: color 0.3s ease;
 }
 
@@ -93,15 +102,49 @@ nav ul li a.active {
 /* Hero Section */
 .hero {
     background: url('images/landscapes/Needles.jpg') center/cover no-repeat;
-    height: 70vh; /* Adjusted for more height */
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 80px; /* Push hero section down to make space for header */
-    padding-top: 20px; /* Additional padding to ensure content is not hidden by header */
+    padding-top: 20px; /* Additional padding at the top */
+}
+
+.hero-content h1, .hero-content h2 {
+    color: #050403;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* Text shadow for readability */
 }
 
 /* ... Other styles remain unchanged */
 
-/* Add JavaScript to toggle 'scrolled' class on header */
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .logo img {
+        height: 35px; /* Slightly smaller logo on mobile */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+}
