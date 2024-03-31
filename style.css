@@ -121,7 +121,7 @@ nav ul li a.active {
     text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* Text shadow for readability */
     margin: 0 auto; /* Auto margins for horizontal centering */
     padding: 0.5em 0; /* Padding to ensure spacing around text */
-    max-width: none; /* Ensure no max-width is restricting the text */
+    width: 100%; /* Ensure no max-width is restricting the text */
 }
 
 /* Responsive Text Sizing */
