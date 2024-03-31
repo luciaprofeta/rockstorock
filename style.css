@@ -1,142 +1,145 @@
-/* CSS for body and text */
-body {
-     font-family: 'Spectral', serif; /* Use Spectral as primary font */
-    color: #050403; /* Set primary text color */
-    background-color: #cfb699; /* Set background color */
+/* Global Resets & Font Definitions */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Spectral', serif;
+    color: #050403;
+    background-color: #cfb699;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
+    margin: auto;
+    padding: 20px;
 }
 
-/* Header styles */
+/* Header */
 header {
     background-color: #f3eec5;
-    padding: 10px 0;
-    border-bottom: 2px solid #a56942; /* Add a border at the bottom for edginess */
-}
-
-.logo {
-    float: left;
+    padding: 20px 0;
+    border-bottom: 2px solid #a56942;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo img {
-    height: 50px; /* Adjust the height as needed */
-    width: auto;
+    height: 50px;
 }
 
+/* Navigation */
 nav {
-    float: right;
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-nav ul li:first-child {
-    margin-left: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li a {
     color: #050403;
     text-decoration: none;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat as secondary font */
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #a56942;
 }
 
-/* Hero section styling */
+/* Hero Section */
 .hero {
-    position: relative; /* Set position to relative */
-    text-align: center; /* Center-align hero content */
-    background-image: url('images/landscapes/Needles.jpg'); /* Set background image */
-    background-size: auto; /* Set background size to auto */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-position: center; /* Center the background image */
-    width: 100%; /* Set width to 100% of the viewport width */
-    height: calc(50vh - 80px); /* Set height to less than half the height of the viewport */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    background: url('images/landscapes/Needles.jpg') center no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
 }
 
 .hero-content {
-    position: absolute; /* Position hero content absolutely */
-    top: 20%; /* Align content vertically at 20% */
-    left: 50%; /* Align content horizontally */
-    transform: translate(-50%, -50%); /* Center content */
-    z-index: 1; /* Set z-index to ensure content appears above image */
+    text-align: center;
+    color: #050403;
+    max-width: 90%;
 }
 
 .hero-content h1 {
-    font-family: 'Spectral', serif; /* Use Spectral for headings */
-    font-weight: 700; /* Set font weight to bold */
-    font-size: 4rem; /* Increase font size for h1 */
-    margin-bottom: 10px; /* Add margin at the bottom of h1 */
-    color: #050403; /* Set text color for hero title */
+    font-size: 2.5rem;
 }
 
 .hero-content h2 {
-    font-family: 'Montserrat', sans-serif; /* Use Montserrat for headings */
-    font-size: 1.5rem; /* Set font size for h2 */
-    color: #050403; /* Set text color for hero subtitle */
-    white-space: nowrap; /* Ensure subtitle takes up only one line */
-    overflow: hidden; /* Hide any overflow text */
-    text-overflow: ellipsis; /* Display ellipsis (...) if text overflows */
+    font-size: 1.2rem;
 }
 
-.hero img {
-    display: block; /* Ensure image behaves as a block element */
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .logo, nav {
+        float: none;
+        text-align: center;
+    }
 }
 
-/* Main content section */
-main {
-    /* Add any additional styling for main content */
-}
-
-/* Footer styling */
+/* Footer */
 footer {
-    /* Add any additional styling for footer */
+    background-color: #f3eec5;
+    color: #050403;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
 }
 
-/* Navigation styling */
-nav {
-    background-color: rgba(26, 26, 26, 0.8); /* Set semi-transparent dark gray background for navigation */
-}
-
-nav a {
-    color: #ffffff; /* Set white color for navigation text */
-    text-decoration: none; /* Remove underline from navigation links */
-    padding: 10px 20px; /* Add padding to navigation links */
-    transition: all 0.3s ease; /* Add transition effect to navigation links */
-}
-
-nav a:hover {
-    color: #9ec3f5; /* Change navigation text color on hover */
-}
-
-/* Button styling */
+/* Button Enhancements */
 .button {
-    background-color: #e54c47; /* Set button background color */
-    color: #ffffff; /* Set white color for button text */
-    border: none; /* Remove button border */
-    padding: 10px 20px; /* Add padding to button */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    transition: all 0.3s ease; /* Add transition effect to button */
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Additional Responsive Adjustments */
+@media screen and (max-width: 480px) {
+    .hero {
+        height: 40vh;
+    }
+
+    .hero-content h1, .hero-content h2 {
+        margin: 10px 0;
+    }
 }
 
 .button:hover {
