@@ -48,7 +48,13 @@
         <!-- Your footer content will be added here -->
     </footer>
 
-    <!-- Add any necessary JavaScript files here -->
+    <script>
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    header.classList.toggle('scrolled', window.scrollY > 0);
+});
+</script>
+
 </body>
 </body>
 </html>
