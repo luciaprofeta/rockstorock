@@ -9,10 +9,12 @@ body {
 .hero {
     position: relative; /* Set position to relative */
     text-align: center; /* Center-align hero content */
-    background-image: url('images/your-hero-image.jpg'); /* Set background image */
+    background-image: url('images/landscapes/Needles.jpg'); /* Set background image */
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the background image */
     height: 500px; /* Set a fixed height for the hero section */
+    max-width: 40vw; /* Set maximum width to 40% of viewport width */
+    margin: 0 auto; /* Center the image horizontally */
 }
 
 .hero-content {
@@ -28,13 +30,13 @@ body {
     font-weight: 700; /* Set font weight to bold */
     font-size: 4rem; /* Increase font size for h1 */
     margin-bottom: 10px; /* Add margin at the bottom of h1 */
-    color: #e54c47; /* Set text color for hero title */
+    color: #050403; /* Set text color for hero title */
 }
 
 .hero-content h2 {
     font-family: 'Montserrat', sans-serif; /* Use Montserrat for headings */
     font-size: 1.5rem; /* Set font size for h2 */
-    color: #a56942; /* Set text color for hero subtitle */
+    color: #050403; /* Set text color for hero subtitle */
     white-space: nowrap; /* Ensure subtitle takes up only one line */
     overflow: hidden; /* Hide any overflow text */
     text-overflow: ellipsis; /* Display ellipsis (...) if text overflows */
