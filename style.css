@@ -109,7 +109,7 @@ nav ul li a.active {
     position: relative;
     padding-top: 20px; /* Additional padding to avoid overlay with the header */
 }
-
+/*
 .hero-content {
     text-align: center; /* Centers the text horizontally */
     width: 100%; /* Ensures the div takes the full width of its parent */
@@ -123,7 +123,7 @@ nav ul li a.active {
     padding: 0.5em 0; /* Padding to ensure spacing around text */
     width: 100%; /* Ensure no max-width is restricting the text */
 }
-
+*/
 /* Responsive Text Sizing */
 @media screen and (width: 100%) {
     .hero-content h1 {
