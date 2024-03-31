@@ -13,10 +13,11 @@ body {
     position: relative; /* Set position to relative */
     text-align: center; /* Center-align hero content */
     background-image: url('images/landscapes/Needles.jpg'); /* Set background image */
-    background-size: cover; /* Cover the entire container */
+    background-size: contain; /* Scale the image to fit within the container while preserving its aspect ratio */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-position: center; /* Center the background image */
-    max-height: calc(50vh - 80px); /* Set maximum height to less than half the height of the viewport */
     width: 100%; /* Set width to 100% of the viewport width */
+    height: calc(50vh - 80px); /* Set height to less than half the height of the viewport */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
 }
