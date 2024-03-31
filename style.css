@@ -62,7 +62,8 @@ header.scrolled {
 }
 
 .logo {
-    flex: 0 0 50px; /* Flex sizing, with a basis of 50px */
+   flex: 1; /* Take remaining space */
+    text-align: right; /* Align the logo to the right */
 }
 
 .logo img {
