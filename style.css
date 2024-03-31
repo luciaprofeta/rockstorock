@@ -47,7 +47,7 @@ header.scrolled {
 }
 
 /* Navigation Bar */
-.nav-bar {
+.nav-bar container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +57,7 @@ header.scrolled {
     transition: background-color 0.3s; /* Transition for the background color */
 }
 
-.nav-bar.scrolled {
+.nav-bar container.scrolled {
     background-color: rgba(243, 238, 197, 0.8); /* Half-opaque background after scrolling */
 }
 
