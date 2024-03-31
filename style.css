@@ -125,7 +125,7 @@ nav ul li a.active {
 }
 
 /* Responsive Text Sizing */
-@media screen and (max-width: 768px) {
+@media screen and (width: 100%) {
     .hero-content h1 {
         font-size: 6vw; /* Adjust font size based on viewport width */
     }
@@ -135,7 +135,7 @@ nav ul li a.active {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (width: 100%) {
     .hero-content h1 {
         font-size: 8vw;
     }
