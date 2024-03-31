@@ -47,7 +47,7 @@ header.scrolled {
 }
 
 /* Navigation Bar */
-.nav-bar container {
+.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,12 +57,13 @@ header.scrolled {
     transition: background-color 0.3s; /* Transition for the background color */
 }
 
-.nav-bar container.scrolled {
+.nav-bar.scrolled {
     background-color: rgba(243, 238, 197, 0.8); /* Half-opaque background after scrolling */
 }
 
 .logo {
-    flex: 0 0 auto; /* Reset flex properties */
+   flex: 1; /* Take remaining space */
+    text-align: right; /* Align the logo to the right */
 }
 
 .logo img {
@@ -109,7 +110,21 @@ nav ul li a.active {
     position: relative;
     padding-top: 20px; /* Additional padding to avoid overlay with the header */
 }
+/*
+.hero-content {
+    text-align: center; /* Centers the text horizontally */
+    width: 100%; /* Ensures the div takes the full width of its parent */
+}
 
+#hero-content h1, #hero-content h2 {
+    display: block; /* Stack the h1 and h2 */
+    color: #050403;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6); /* Text shadow for readability */
+    margin: 0 auto; /* Auto margins for horizontal centering */
+    padding: 0.5em 0; /* Padding to ensure spacing around text */
+    width: 100%; /* Ensure no max-width is restricting the text */
+}
+*/
 /* Responsive Text Sizing */
 @media screen and (width: 100%) {
     .hero-content h1 {
