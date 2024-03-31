@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
 body {
     font-family: 'Spectral', serif;
     color: #050403;
@@ -17,6 +21,7 @@ img {
     height: auto;
 }
 
+/* Main Layout Container */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -26,129 +31,77 @@ img {
 
 /* Header */
 header {
-    background-color: #f3eec5;
+    background-color: transparent; /* Transparent background initially */
+    color: #050403;
     padding: 20px 0;
-    border-bottom: 2px solid #a56942;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px; /* Restrict the header height to be more compact */
+    position: fixed; /* Fixed position for a sticky header */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: background-color 0.3s; /* Transition for the background color */
+}
+
+header.scrolled {
+    background-color: #f3eec5; /* Solid color after scrolling */
+}
+
+.logo {
+    text-align: center;
 }
 
 .logo img {
-    height: 60px; /* Slightly larger logo for visibility */
+    height: 60px; /* Adjust the size of your logo */
+    display: block;
+    margin: 0 auto;
 }
 
-/* Navigation */
-nav {
+/* Navigation Bar */
+.nav-bar {
     display: flex;
+    justify-content: space-between; /* Space between logo and navigation */
     align-items: center;
+    max-width: 1200px; /* Same as container width */
+    margin: 0 auto;
+    padding: 0 20px; /* Padding for some space on the sides */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 0 15px;
 }
 
 nav ul li a {
     color: #050403;
     text-decoration: none;
-    font-size: 1rem; /* Smaller font size for a more balanced header */
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
-    padding: 10px 15px; /* Reduced padding for compact navigation buttons */
-    background-color: #a56942; /* Add a background color for clear button-like appearance */
-    border-radius: 5px; /* Rounded corners for buttons */
-    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 8px 16px;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    background-color: #8b5c33; /* Darken the background on hover for interactivity */
-    color: #f3eec5;
+nav ul li a:hover,
+nav ul li a.active {
+    color: #a56942;
 }
 
 /* Hero Section */
 .hero {
-    background: url('images/landscapes/Needles.jpg') center no-repeat;
-    background-size: cover;
-    height: 50vh; /* Reduced height to give more space to other content */
+    background: url('images/landscapes/Needles.jpg') center/cover no-repeat;
+    height: 70vh; /* Adjusted for more height */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-bottom: 40px;
+    margin-top: 80px; /* Push hero section down to make space for header */
+    padding-top: 20px; /* Additional padding to ensure content is not hidden by header */
 }
 
-.hero-content {
-    text-align: center;
-    color: #050403;
-    background-color: rgba(243, 238, 197, 0.7); /* Semi-transparent background for readability */
-    padding: 20px;
-    border-radius: 5px; /* Rounded corners for the content background */
-    max-width: 90%;
-}
+/* ... Other styles remain unchanged */
 
-.hero-content h1 {
-    font-size: 3rem; /* Increased font size for impact */
-    color: #050403;
-    margin-bottom: 0.5rem;
-}
-
-.hero-content h2 {
-    font-size: 1.5rem; /* Adjusted font size for better readability */
-    color: #050403;
-    margin-bottom: 0.5rem;
-}
-
-/* Responsiveness */
-@media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    nav ul li a {
-        padding: 8px 12px; /* Smaller padding on mobile */
-        font-size: 0.9rem; /* Smaller font size on mobile */
-    }
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content h2 {
-        font-size: 1.2rem;
-    }
-}
-
-/* Footer */
-footer {
-    background-color: #f3eec5;
-    color: #050403;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-/* Button Enhancements */
-.button {
-    display: inline-block;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-}
-
-/* Additional Responsive Adjustments */
-@media screen and (max-width: 480px) {
-    .hero {
-        height: 40vh;
-    }
-
-    .hero-content h1, .hero-content h2 {
-        margin: 10px 0;
-    }
-}
+/* Add JavaScript to toggle 'scrolled' class on header */
