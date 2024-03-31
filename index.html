@@ -15,9 +15,9 @@
 <body>
     <!-- Header section -->
     <header>
-    <div class="container">
+     <div class="nav-bar container"> <!-- Combined nav-bar with container -->
         <div class="logo">
-            <img src="images/logo.png" alt="Your Logo">
+            <img src="images/logo.png" alt="RocksToRock Logo"> 
         </div>
         <nav>
             <ul>
@@ -49,14 +49,19 @@
     </footer>
 
     <script>
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('header');
-    const navBar = document.querySelector('.nav-bar');
-    const scrollPosition = window.scrollY > 0;
+document.addEventListener('DOMContentLoaded', function () {
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        const navBar = document.querySelector('.nav-bar'); // We're targeting the combined nav-bar container
 
-    header.classList.toggle('scrolled', scrollPosition);
-    navBar.classList.toggle('scrolled', scrollPosition);
+        if (header && navBar) { // Making sure these elements exist
+            const isScrolled = window.scrollY > 0;
+            header.classList.toggle('scrolled', isScrolled);
+            navBar.classList.toggle('scrolled', isScrolled); // Now it will apply the styles correctly
+        }
+    });
 });
+
 </script>
 
 </body>
