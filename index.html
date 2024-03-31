@@ -51,7 +51,11 @@
     <script>
 window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
-    header.classList.toggle('scrolled', window.scrollY > 0);
+    const navBar = document.querySelector('.nav-bar');
+    const scrollPosition = window.scrollY > 0;
+
+    header.classList.toggle('scrolled', scrollPosition);
+    navBar.classList.toggle('scrolled', scrollPosition);
 });
 </script>
 
