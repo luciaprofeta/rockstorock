@@ -14,11 +14,12 @@ At the core of my research is the question of how Earth records the passage of t
 
 My scientific work focuses on:
 
-- Low-temperature thermochronology (Apatite Fission Track)  
-- Surface processes and landscape evolution  
+- Low-temperature thermochronology (Apatite Fission Track)    
 - Tectonics, geochemistry, and petrology  
-- Integrating field observations with laboratory data  
+- Surface processes and landscape evolution 
 - Paleoenvironments and the reconstruction of Earth’s dynamic history  
+- Integrating field observations with laboratory data 
+- Geoinformatics and open data 
 
 Across each of these domains, I aim to build clear, reproducible workflows that support collaborative science.
 
