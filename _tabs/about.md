@@ -1,4 +1,3 @@
-
 ---
 title: About
 icon: fas fa-user
@@ -42,7 +41,7 @@ This combination of scientific training and user-centered design informs every p
 - [Google Scholar](https://scholar.google.com/citations?user=_kWTLm4AAAAJ&hl=en)
 - [LinkedIn](https://www.linkedin.com/in/lucia-profeta/)
 - [Bluesky](https://bsky.app/profile/rocks2rock.bsky.social)
-- [Instagram](https://bsky.appinstagram.com/rocks_to_rock)
+- [Instagram](https://instagram.com/rocks_to_rock)
 
 
 # Outside of Research
