@@ -1,11 +1,4 @@
----
-# the default layout is 'page'
-icon: fas fa-info-circle
-order: 4
----
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
 ---
 title: About
 icon: fas fa-user
@@ -43,11 +36,13 @@ These skills now complement my scientific work by helping me:
 
 This combination of scientific training and user-centered design informs every part of my approach to research.
 
-# Professional Profiles
+# Social Profiles
 
-- **Google Scholar:** https://scholar.google.com/citations?user=_kWTLm4AAAAJ&hl=en  
-- **LinkedIn:** https://www.linkedin.com/in/lucia-profeta/  
-- **Bluesky:** https://bsky.app/profile/rocks2rock.bsky.social  
+- [Google Scholar](https://scholar.google.com/citations?user=_kWTLm4AAAAJ&hl=en)
+- [LinkedIn](https://www.linkedin.com/in/lucia-profeta/)
+- [Bluesky](https://bsky.app/profile/rocks2rock.bsky.social)
+- [Instagram](https://bsky.appinstagram.com/rocks_to_rock)
+
 
 # Outside of Research
 
