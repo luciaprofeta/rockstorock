@@ -5,8 +5,6 @@ order: 4
 permalink: /photography/
 ---
 
-# Music Photography
-
 Commissions and shots in the wild. Click any image to view it larger.
 
 <style>
