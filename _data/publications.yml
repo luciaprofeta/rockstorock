@@ -1,0 +1,49 @@
+# Publications data file for rockstorock.com
+# Add more entries using your Google Scholar profile:
+# https://scholar.google.com/citations?user=_kWTLm4AAAAJ&hl=en
+
+- type: "Journal article"
+  year: 2016
+  title: "Quantifying crustal thickness over time in magmatic arcs"
+  authors: "Lucia Profeta, Mihai N. Ducea, James B. Chapman, Scott R. Paterson, Susana M. Henriquez Gonzales, Moritz Kirsch, Lucian Petrescu, Peter G. DeCelles"
+  venue: "Scientific Reports"
+  volume: "5"
+  pages: "17786"
+  doi: "10.1038/srep17786"
+  url: "https://www.nature.com/articles/srep17786"
+
+- type: "Data descriptor"
+  year: 2023
+  title: "The UCLA Cosmochemistry Database"
+  authors: "Bidong Zhang, Kerstin A. Lehnert, Alan E. Rubin, Kevin D. McKeegan, Paul H. Warren, Jennifer L. Mays, Lucia R. Profeta, Annika K. Johansson, Peng Ni, Edward D. Young, Frank T. Kyte, Ming-Chang Liu, Emilie T. Dunham, Haolan Tang, Peng Ji, Juan D. Figueroa-Salazar, and coauthors"
+  venue: "Scientific Data"
+  volume: "10"
+  pages: "Article 874"
+  doi: "10.1038/s41597-023-02807-7"
+  url: "https://www.nature.com/articles/s41597-023-02807-7"
+
+# EXAMPLE TEMPLATES — copy and fill in more from Scholar
+
+# - type: "Journal article"
+#   year: 20XX
+#   title: "Paper title here"
+#   authors: "First A. Author, Second B. Author, Lucia R. Profeta"
+#   venue: "Journal Name"
+#   volume: "vol(issue)"
+#   pages: "page–page"
+#   doi: "10.xxxx/xxxxx"
+#   url: "https://doi.org/10.xxxx/xxxxx"
+#
+# - type: "Conference abstract"
+#   year: 20XX
+#   title: "Abstract title here"
+#   authors: "First A. Author, Lucia R. Profeta, etc."
+#   venue: "Conference Name, City"
+#   url: "https://meeting-link-if-any"
+#
+# - type: "Thesis"
+#   year: 2017
+#   title: "M.Sc. thesis title here"
+#   authors: "Lucia R. Profeta"
+#   venue: "University of Arizona, M.Sc. thesis"
+#   url: "https://repository-link-if-any"
