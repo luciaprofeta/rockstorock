@@ -7,6 +7,8 @@ permalink: /
 
 # Lucia R Profeta
 
+- [CV](/assets/lib/Profeta_CV.pdf)
+
 Hi, I am Lucy! I am a PhD student studying low-temperature thermochronology to explore how Earth’s surface responded to past environmental conditions, landscape evolution events, and transitions that provide insight into both Earth’s past and future. My work combines geologic field methods, laboratory analyses, and quantitative interpretation to better understand the timing and pace of processes that shaped ancient environments.
 
 At the core of my research is the question of how Earth records the passage of time: through minerals, landscapes, and the signals that slowly accumulate as tectonics, erosion, sedimentation, and environmental variability interact. I am particularly interested in how low-temperature thermochronologic systems can illuminate intervals in geologic time that may serve as analogs for Earth systems today.
