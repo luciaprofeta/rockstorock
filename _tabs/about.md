@@ -1,7 +1,7 @@
 ---
 title: About
 icon: fas fa-user
-order: 0
+order: 1
 permalink: /
 ---
 
