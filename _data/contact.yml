@@ -1,17 +1,17 @@
-#  The contact options.
+# The contact options.
 
 - type: email
   icon: "fas fa-envelope"
-  noblank: false #don't open link in current tab
+  noblank: false
 
+- type: linkedin
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/lucia-profeta/"
 
- - type: linkedin
-   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-   url:  'https://www.linkedin.com/in/lucia-profeta/'                  # Fill with your Linkedin homepage
-
- - type: bluesky
-   icon: 'fa-brands fa-bluesky'
-   url: 'https://bsky.app/profile/rocks2rock.bsky.social'                   # Fill with your Bluesky profile link
+- type: bluesky
+  icon: "fa-brands fa-bluesky"
+  url: "https://bsky.app/profile/rocks2rock.bsky.social"
 
 - type: github
   icon: "fab fa-github"
+  url: "https://github.com/luciaprofeta"
