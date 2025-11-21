@@ -1,10 +1,11 @@
 ---
-title: Lucia R Profeta 
+title: About 
 icon: fas fa-user
 order: 1
 permalink: /
 ---
 
+# Lucia R Profeta
 
 Hi, I am Lucy! I am a PhD student studying low-temperature thermochronology to explore how Earth’s surface responded to past environmental conditions, landscape evolution events, and transitions that provide insight into both Earth’s past and future. My work combines geologic field methods, laboratory analyses, and quantitative interpretation to better understand the timing and pace of processes that shaped ancient environments.
 
