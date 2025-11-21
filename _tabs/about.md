@@ -2,7 +2,7 @@
 title: Lucia R Profeta 
 icon: fas fa-user
 order: 1
-permalink: /about/
+permalink: /
 ---
 
 
