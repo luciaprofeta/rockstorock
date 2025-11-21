@@ -1,7 +1,7 @@
 ---
 title: Photography
 icon: fas fa-camera
-order: 0
+order: 1
 permalink: /photography/
 ---
 
