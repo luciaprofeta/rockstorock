@@ -47,6 +47,13 @@ This combination of scientific training and user-centered design informs every p
 - [Bluesky](https://bsky.app/profile/rocks2rock.bsky.social)
 - [Instagram](https://instagram.com/rocks_to_rock)
 
+# Product Management
+
+During my tenure at Columbia University (2019-2025) I was Senior Product Manager and co-PI for the IEDA suite of software tools for publishing and accessing geochemical and related geoscience data. 
+- [IEDA] (https://www.iedadata.org/)
+- [PetDb] (https://earthchem.org/petdb) 
+
+assets/lib/petdb.png
 
 # Outside of Research
 
