@@ -50,10 +50,12 @@ This combination of scientific training and user-centered design informs every p
 # Product Management
 
 During my tenure at Columbia University (2019-2025) I was Senior Product Manager and co-PI for the IEDA suite of software tools for publishing and accessing geochemical and related geoscience data. 
-- [IEDA] (https://www.iedadata.org/)
-- [PetDb] (https://earthchem.org/petdb) 
+- [IEDA](https://www.iedadata.org/)
+- [PetDB](https://earthchem.org/petdb) 
 
-assets/lib/petdb.png
+<p align="left">
+  <img src="/assets/lib/petdb.png" width="300" alt="PetDB">
+</p>
 
 # Outside of Research
 
