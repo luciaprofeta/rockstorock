@@ -79,15 +79,15 @@ Commissions and shots in the wild. Click any image to view it larger.
 
 <div class="photo-gallery">
 
-{% for photo in site.static_files %}
-  {% if photo.path contains '/assets/img/photography/' %}
-    <figure data-full="{{ photo.path }}">
-      <img src="{{ photo.path }}" alt="Photography image" loading="lazy">
-    </figure>
-  {% endif %}
+{% assign photos = site.static_files | where: "dir", "/assets/img/photography" %}
+{% for photo in photos %}
+  <figure data-full="{{ photo.path }}">
+    <img src="{{ photo.path }}" alt="Photography image" loading="lazy">
+  </figure>
 {% endfor %}
 
 </div>
+
 
 <div class="lightbox-overlay"
      id="lightbox"
