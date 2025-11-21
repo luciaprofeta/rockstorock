@@ -1,9 +1,10 @@
 # The contact options.
 
-- type: email
+- type: link
   icon: "fas fa-envelope"
+  url: "mailto:lprofeta@unc.edu"
   noblank: true
-
+  
 - type: linkedin
   icon: "fab fa-linkedin"
   url: "https://www.linkedin.com/in/lucia-profeta/"
