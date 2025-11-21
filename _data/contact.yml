@@ -2,7 +2,8 @@
 
 - type: email
   icon: "fas fa-envelope"
-  noblank: false
+  url: "mailto:lprofeta@unc.edu"
+  noblank: true
 
 - type: linkedin
   icon: "fab fa-linkedin"
